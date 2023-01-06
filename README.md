@@ -1,4 +1,5 @@
-
+# TODO
+- update logo.astro in /themes/src/components to an image
 
 ## Template and Theme Credit
 
