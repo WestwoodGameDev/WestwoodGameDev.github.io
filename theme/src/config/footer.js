@@ -1,22 +1,17 @@
 export const footerSocials = [
   {
-    name: 'Twitter',
-    url: 'https://twitter.com/littlesticksdev',
-    icon: "mdi:twitter",
-  },
-  {
     name: 'Youtube',
-    url: 'https://youtube.com/c/LittleSticks',
+    url: 'TBD',
     icon: "mdi:youtube",
   },
   {
     name: 'Github',
-    url: 'https://github.com/littlesticks',
+    url: 'https://github.com/WestwoodGameDev',
     icon: "mdi:github",
   },
   {
     name: 'Discord',
-    url: 'https://littlesticks.dev/discord',
+    url: 'https://discord.gg/jXpwGJtVCj',
     icon: "ic:baseline-discord",
   },
 ]

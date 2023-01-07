@@ -1,26 +1,26 @@
 ---
 import {Icon} from 'astro-icon';
 import { Button, Container, TextCardSection } from '@littlesticks/odyssey-theme-components';
-import Layout from '../../layouts/Page.astro';
+import Layout from '../layouts/Page.astro';
 
 const seo = {
-	title: 'Get Started using the Astro Odyssey Theme',
-	description: 'Get started on how to setup and use this Astro theme.',
+	title: 'Sign up',
+	description: 'Sign up to join game development club.',
 };
 ---
 
 <Layout {seo}>
 	<Container>
 		<TextCardSection>
-			<h1>Get Started with Odyssey</h1>
+			<h1>Sign Up</h1>
 			<div class="cta-buttons__container">
         <Button
-        href="https://littlesticks.dev/templates/odyssey-theme"
+        href="https://forms.gle/GLovohb6jEiMeKxx9"
         outlined
         newTab
         customIcon
         >
-        Get Odyssey Theme
+        Sign Up Sheet
         <Fragment slot="icon">
           <Icon name="ic:baseline-launch" />
         </Fragment>
@@ -29,16 +29,7 @@ const seo = {
 					href="/theme/theme-setup"
           customIcon
 					>
-          Theme Setup
-          <Fragment slot="icon">
-            <Icon name="ic:baseline-chevron-right" />
-          </Fragment>
-				</Button>
-        <Button
-					href="/theme/customizing-odyssey"
-          customIcon
-					>
-          Customizing Odyssey
+          When Our Next Meeting Is
           <Fragment slot="icon">
             <Icon name="ic:baseline-chevron-right" />
           </Fragment>
