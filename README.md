@@ -1,5 +1,7 @@
 # TODO
 - update logo.astro in /themes/src/components to an image
+- get favicon working
+
 
 ## Template and Theme Credit
 
