@@ -18,15 +18,15 @@ export const footerSocials = [
 
 export const footerLists = [
 	{
-		title: 'Landing Pages',
+		title: 'Get Started With Game Development',
 		items: [
 			{
-				title: 'Landing Page 1',
-				slug: '/landing-pages/landing-1',
+				title: 'Downloads',
+				slug: '/resources/downloads',
 			},
 			{
-				title: 'Landing Page 2',
-				slug: '/landing-pages/landing-2',
+				title: 'Quickstart',
+				slug: '/resources/quickstart',
 			},
       // {
 			// 	title: 'Landing Page 3',
@@ -35,41 +35,41 @@ export const footerLists = [
 		],
 	},
 	{
-		title: 'Company',
+		title: 'Club',
 		items: [
 			{
 				title: 'About',
-				slug: '/company/about',
+				slug: '/club/about',
 			},
 			{
-				title: 'Blog',
-				slug: '/blog',
+				title: 'Lessons',
+				slug: '/lessons',
 			},
 			{
 				title: 'Contact',
-				slug: '/company/contact',
+				slug: '/club/contact',
 			},
 		],
 	},
-	{
-		title: 'Theme',
-		items: [
-			{
-				title: 'Get Started',
-				slug: '/theme/get-started',
-			},
-			{
-				title: 'Style Guide',
-				slug: '/theme/style-guide',
-			},
-      {
-        title: 'Theme Setup',
-        slug: '/theme/theme-setup',
-      },
-      {
-        title: 'Customizing Odyssey',
-        slug: '/theme/customizing-odyssey',
-      }
-		],
-	},
+	// {
+	// 	title: 'Theme',
+	// 	items: [
+	// 		{
+	// 			title: 'Get Started',
+	// 			slug: '/theme/get-started',
+	// 		},
+	// 		{
+	// 			title: 'Style Guide',
+	// 			slug: '/theme/style-guide',
+	// 		},
+    //   {
+    //     title: 'Theme Setup',
+    //     slug: '/theme/theme-setup',
+    //   },
+    //   {
+    //     title: 'Customizing Odyssey',
+    //     slug: '/theme/customizing-odyssey',
+    //   }
+	// 	],
+	// },
 ];
