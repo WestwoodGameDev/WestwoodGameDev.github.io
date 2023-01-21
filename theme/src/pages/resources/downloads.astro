@@ -1,6 +1,8 @@
 ---
 import Layout from '../../layouts/Page.astro';
-import { Container } from '@littlesticks/odyssey-theme-components';
+import { Container, Button } from '@littlesticks/odyssey-theme-components';
+import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';
+import {Icon} from 'astro-icon'
 
 const seo = {
 	title: 'Downloads | Game Development Resources | Game Dev Club',
@@ -10,9 +12,31 @@ const seo = {
 
 <Layout seo={seo}>
     <Container>
-        <h1>Downloads</h1>
+        <h1 class="download-page-title">Downloads</h1>
         <p>Here are all of the major applications necessary to make games.</p>
-        <h2>Unity</h2>
+        <p>Note: Our usual meeting place (E1307) has all necessary softare installed. See our next meeting time can be found <a href="/resources/calendar">here</a>. This download guide contains all of the most common tools used in game development. If you plan on working at home, we suggest you download unity and git at the least.</p>
+        <hr />
+        <TextAndImageHero>
+            <div slot="text-container">
+                <h2>Unity</h2>
+                <p>Unity is a game engine that provides a user interface (UI) which allows you to easily combine your code and 3d models to make games.</p>
+            </div>
+            <div slot="btns-container">
+                <Button href="/guides/download-guides/unity-download" customIcon
+                    >Download Guide <Fragment slot="icon">
+              <Icon name="ic:baseline-chevron-right"/>
+            </Fragment></Button
+                >
+            </div>
+            <picture slot="image-container">
+                <img
+                    src="/assets/images/landing-1/landing-hero-1.jpg"
+                    alt="Astro Odyssee"
+                    id="home-hero-image"
+                />
+            </picture>
+        </TextAndImageHero>
+        <!-- <h2>Unity</h2>
         <p>Unity is a game engine that allows you to make games for desktop, mobile, and web.</p>
         <p><a href="https://unity3d.com/get-unity/download">Download Unity</a></p>
         <h2>Visual Studio Code</h2>
@@ -38,11 +62,16 @@ const seo = {
         <p><a href="https://www.adobe.com/products/illustrator.html">Download Adobe Illustrator</a></p>
         <h2>Adobe After Effects</h2>
         <p>Adobe After Effects is a professional motion graphics and visual effects software.</p>
-        <p><a href="https://www.adobe.com/products/aftereffects.html">Download Adobe After Effects</a></p>
+        <p><a href="https://www.adobe.com/products/aftereffects.html">Download Adobe After Effects</a></p> -->
     </Container>
 </Layout>
 
 <!-- write a style sheet for the above page. -->
 <style>
-    
+    .download-page-title {
+        background-color: var(--theme-surface-1);
+        padding: 1rem;
+        display: inline-block;
+        border-radius: 1rem;
+    }
 </style>
