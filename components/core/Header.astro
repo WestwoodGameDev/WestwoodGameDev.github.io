@@ -12,6 +12,7 @@ const { navData, rightMenu } = Astro.props;
   let scrollPosition = 0;
 
   menuButton.addEventListener('click', toggleMenu)
+  window.onscroll = function() {scroll()};
 
   function toggleMenu() {
     menuButtonIconHam.toggleAttribute('hidden');
@@ -34,6 +35,21 @@ const { navData, rightMenu } = Astro.props;
       bodyElement.style.top = `-${scrollPosition}px`;
       bodyElement.style.width = '100%';
     }
+	
+	// Get the header
+	var header = document.getElementById("odysseyNavHeader");
+
+	// Get the offset position of the navbar
+	var sticky = header.offsetTop;
+
+	// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	function scroll() {
+	  if (window.pageYOffset > sticky) {
+		header.classList.add("sticky");
+	  } else {
+		header.classList.remove("sticky");
+	  }
+	}
     
     navHeader.toggleAttribute('mobile-menu-open');
   }
@@ -78,6 +94,18 @@ const { navData, rightMenu } = Astro.props;
     display: flex;
     justify-content: space-between;
     align-items: center;
+	background: rgba(255, 255, 255, 0.28);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5.2px);
+	-webkit-backdrop-filter: blur(5.2px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .sticky {
+	position: fixed;
+	top: 0;
+	width: 100%
   }
   header.header--right {
     display: grid;
