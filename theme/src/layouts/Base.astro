@@ -1,5 +1,5 @@
 ---
-import { SkipLink } from '@littlesticks/odyssey-theme-components';
+import { SkipLink , TextCardSection } from '@littlesticks/odyssey-theme-components';
 import BaseHead from '../components/head/BaseHead.astro';
 import type { Props as BaseHeadProps } from '../components/head/BaseHead.astro';
 
@@ -16,8 +16,14 @@ const { seo } = Astro.props;
 	</head>
 	<body>
 		<SkipLink />
-    <slot name="announcement-bar" />
+		<slot name="announcement-bar" />
 		<slot name="header" />
+		<TextCardSection>
+			<h1>HAPPY BIRTHDAY ARNOB!</h1>
+			<p>
+				Wish him happy birthday!
+			</p>
+		</TextCardSection>
 		<main id="content">
 			<slot />
 		</main>
