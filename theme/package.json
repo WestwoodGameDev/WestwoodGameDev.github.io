@@ -27,6 +27,7 @@
 		"prettier-plugin-astro": "^0.0.12"
 	},
 	"dependencies": {
+		"cannon-es": "^0.20.0",
 		"three": "^0.153.0"
 	}
 }

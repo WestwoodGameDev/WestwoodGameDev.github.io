@@ -6,6 +6,8 @@ import Logo from '../components/Logo.astro';
 import settings from '../config/settings';
 import { footerLists, footerSocials } from '../config/footer';
 
+import WebGLCanvas from '../three/WebGLCanvas.astro';
+
 
 export interface Props {
 	seo?: BaseHeadProps;
@@ -23,6 +25,10 @@ const { seo } = Astro.props as Props;
 		</span>
 		<Button slot="action-item" href="/resources/calendar">Calendar</Button>
 	</Header>
+
+	<!--WebGL Canvas Background 
+	<WebGLCanvas />-->
+
 	<div id="page">
 		<slot />
 	</div>
