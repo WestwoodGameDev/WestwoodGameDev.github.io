@@ -28,10 +28,10 @@ export const footerLists = [
 				title: 'Quickstart',
 				slug: '/resources/quickstart',
 			},
-      // {
-			// 	title: 'Landing Page 3',
-			// 	slug: '/landing-pages/landing-3',
-			// },
+      		{
+				title: 'Unity Curriculum',
+				slug: '/resources/unity',
+			},
 		],
 	},
 	{

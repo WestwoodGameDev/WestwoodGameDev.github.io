@@ -1,5 +1,7 @@
 ---
 import { TextSection } from '@littlesticks/odyssey-theme-components';
+import {Container} from '@littlesticks/odyssey-theme-components';
+import {TextCardSection} from '@littlesticks/odyssey-theme-components';
 import Layout from '../../layouts/Page.astro';
 import HeroSection from '../../components/sections/heros/HeroSection.astro';
 
@@ -12,19 +14,37 @@ const seo = {
 <Layout {seo}>
 	<HeroSection>
 		<div slot="text-container">
-			<h1>About Westwood Game Development Club</h1>
+      <h2>About Westwood Game Development Club</h2>
 			<p>
-				Our mission at the Game Development Club is to empower and inspire students to explore their creativity and passion for game development. We strive to create an inclusive and collaborative environment where members can learn from each other, push their boundaries, and turn their game development dreams into reality. We believe that everyone has the potential to create something truly remarkable and through our club, we aim to give students the tools, resources, and support to make that happen. 
+				Our mission at the Game Development Club is to empower and inspire students to explore their creativity and passion for game development. 
+        We strive to create an inclusive and collaborative environment where members can learn from each other, push their boundaries, and turn their game development dreams into reality. 
+        We believe that everyone has the potential to create something truly remarkable and through our club, we aim to give students the tools, resources, and support to make that happen. 
 			</p>
+      <p>Our meetings times can be found <a href="/club/calendar">here</a> and take place in room E1307.</p>
+
+      <p>If you're interested in joining our club or have any questions, please feel free to reach out to one of our <a href="/club/contact">club leaders</a> </p>
 		</div>
     <picture slot="image-container">
       <img
         src="/assets/images/about/DELETEME35.png"
-        alt="Astro Odyssee"
+        alt="Game Design Image"
         id="home-hero-image"
       />
     </picture>
 	</HeroSection>
+  <!-- 
+  <Container>
+    <div id="staff-list">
+      <h2>Current Staff:</h2>
+      <ul>
+        <li>President: Arnav Jambhulkar</li>
+        <li>Vice President: Alexander Bui</li>
+        <li>Director of Communications: Ilia Iliev</li>
+        <li>Event Director: Zhewen Yuan</li>
+        <li>Secretary: Yogansh Agarwal</li>
+      </ul>
+    </div>
+  
   <TextSection narrow>
     <p>Welcome to the Game Development Club at Westwood High School!</p>
 
@@ -40,4 +60,14 @@ const seo = {
 
     <p>Thank you for your interest in our club and we hope to see you soon!</p>
   </TextSection>
+</Container>-->
 </Layout>
+
+<style>
+  #staff-list {
+    align-items: center;
+    margin: 0 auto;
+    max-width: var(--container-max-width);
+    padding: var(--container-padding);
+  }
+</style>
