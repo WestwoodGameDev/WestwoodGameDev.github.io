@@ -1,4 +1,7 @@
 :root {
+
+	color-scheme: light;
+
 	/* Theme Colors */
 	--theme-primary: #e38a20;
 	--theme-primary-hover: #eb870f;
@@ -35,4 +38,23 @@
 		Times, serif;
 	--theme-font-family-sans: 'Lato', -apple-system, BlinkMacSystemFont,
 		sans-serif;
+}
+
+[data-theme='dark'] {
+	color-scheme: dark;
+	/* Theme Colors */
+	--theme-primary: hsl(0, 0%, 100%);
+	--theme-primary-hover: hsl(0, 0%, 90%);
+	--theme-on-primary: hsl(0, 0%, 0%);
+
+	--theme-bg: hsl(0, 0%, 2%);
+	--theme-on-bg: hsl(0, 0%, 100%);
+
+	--theme-surface-1: hsl(0, 0%, 20%);
+	--theme-on-surface-1: hsl(0, 0%, 100%);
+
+	--theme-surface-2: #203422;
+	--theme-on-surface-2: #ffffff;
+
+	--form-field-input-color: var(--theme-on-bg);
 }

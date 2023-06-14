@@ -105,7 +105,6 @@ export class ThemeSwitcher extends LitElement {
 	}
 
 	render() {
-	console.log('rendering');
     const themeButtons = html`${themes.map((theme) => {
       return html`
       <div class="theme-select__container">
