@@ -122,7 +122,7 @@ export class TCanvas {
     private anim = () => {
       this.world.step(1/60, gl.time.delta, 10);
 
-      if (gl.time.elapsed > this.bodies.length * 0.1 && this.bodies.length < 100) {
+      if (gl.time.elapsed > this.bodies.length * 0.01 && this.bodies.length < 100) {
         this.addSphere()
       }
 
