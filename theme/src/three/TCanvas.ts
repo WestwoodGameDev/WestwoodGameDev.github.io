@@ -90,7 +90,7 @@ export class TCanvas {
 
       // Raycaster for mouse interaction
       this.raycaster = new THREE.Raycaster()
-      this.pointer = new THREE.Vector2()
+      this.pointer = new THREE.Vector2(-1000, -1000) // Placeholder values
       window.addEventListener('mousemove', (event) => {
         this.pointer.x = ( event.clientX / window.innerWidth ) * 2 - 1;
         this.pointer.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
@@ -107,7 +107,7 @@ export class TCanvas {
         mass: 5, // kg
         shape: new CANNON.Sphere(radius),
       })
-      sphereBody.position.set(THREE.MathUtils.randFloatSpread(2), 10 + THREE.MathUtils.randFloatSpread(5), THREE.MathUtils.randFloatSpread(2)) // m
+      sphereBody.position.set(THREE.MathUtils.randFloatSpread(2), 10 + THREE.MathUtils.randFloatSpread(5), THREE.MathUtils.randFloatSpread(2))
       this.world.addBody(sphereBody)
       this.bodies.push(sphereBody);
 
@@ -127,7 +127,7 @@ export class TCanvas {
       }
 
       for (var index in this.bodies) {
-        if (this.meshes[index].position.y < -4) {
+        if (this.meshes[index].position.y < -5) {
           this.bodies[index].position.set(THREE.MathUtils.randFloatSpread(2), 10 + THREE.MathUtils.randFloatSpread(5), THREE.MathUtils.randFloatSpread(2))
           this.bodies[index].velocity.setZero()
         }
