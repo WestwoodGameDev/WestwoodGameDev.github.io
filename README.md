@@ -1,4 +1,5 @@
 ### [Website Link](https://westwoodgamedev.github.io/)
+### [Unblocked Website Link](https://westwoodgamedev.vercel.app/)
 # How to add pages to the website (ask an officer if you want edit perms)
 1. [clone the repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 2. open the ```/theme``` folder
